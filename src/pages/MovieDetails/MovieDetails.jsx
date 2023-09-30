@@ -35,7 +35,11 @@ const MovieDetails = () => {
           <div className={css.container}>
             <div>
               <img
-                src={`https://image.tmdb.org/t/p/w500${movieDetails.poster_path}`}
+                src={
+                  movieDetails.poster_path
+                    ? `https://image.tmdb.org/t/p/w500${movieDetails.poster_path}`
+                    : 'https://dostawka.com.pl/wp-content/uploads/2017/08/no-image.png'
+                }
                 alt={movieDetails.title}
                 className={css.movieImg}
                 loading={lazy}

@@ -10,10 +10,14 @@ const MovieList = ({ movies }) => {
         {movies.map(movie => {
           return (
             <li key={movie.id}>
-              <div className={css.card}>
+              <div className={movie.poster_path ? css.card : css.cardNoImage}>
                 <Link to={`/movies/${movie.id}`} state={{ from: location }}>
                   <img
-                    src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+                    src={
+                      movie.poster_path
+                        ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
+                        : 'https://dostawka.com.pl/wp-content/uploads/2017/08/no-image.png'
+                    }
                     alt={movie.title}
                     loading={lazy}
                     class={css.movieImg}
