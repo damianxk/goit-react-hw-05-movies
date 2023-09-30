@@ -1,0 +1,18 @@
+nav {
+  color: black;
+  background-color: #367de0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  padding: 20px;
+  font-size: 26px;
+}
+
+.link:hover {
+  transform: scale(1.02);
+  font-weight: bold;
+}

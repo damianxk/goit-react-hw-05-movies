@@ -1,0 +1,62 @@
+.wrapper {
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.back {
+  padding: 20px;
+  color: #367de0;
+  font-size: 26px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.back:hover {
+  transform: scale(1.05);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.movieImg {
+  max-width: 500px;
+  width: 100%;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.reviewList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.info {
+  padding-left: 20px;
+}
+
+.link:hover {
+  transform: scale(1.01);
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+}

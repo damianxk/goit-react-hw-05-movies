@@ -1,0 +1,43 @@
+.castList {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  font-size: 16px;
+  gap: 25px;
+}
+
+.castItem {
+  max-width: 300px;
+  width: 100%;
+  list-style: none;
+  border: 1px solid black;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.castItemNoImage {
+  max-width: 300px;
+  width: 100%;
+  list-style: none;
+  border: 1px solid black;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.castImg {
+  max-width: 300px;
+}
+
+.castItem p,
+.castItemNoImage p {
+  padding: 20px 0;
+}
+.castName {
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}

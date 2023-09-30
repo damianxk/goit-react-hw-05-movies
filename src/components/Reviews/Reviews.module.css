@@ -1,0 +1,21 @@
+.reviewsList {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 20px;
+  list-style: none;
+}
+
+.review {
+  background-color: rgba(54, 125, 224, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.review h2 {
+  padding: 0 0 20px 0;
+}
+
+.review:hover {
+  transform: scale(1.01);
+}
