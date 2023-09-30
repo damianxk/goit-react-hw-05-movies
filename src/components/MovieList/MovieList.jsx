@@ -1,6 +1,7 @@
 import { lazy } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import css from './MovieList.module.css';
+import PropTypes from 'prop-types';
 
 const MovieList = ({ movies }) => {
   const location = useLocation();
@@ -31,6 +32,10 @@ const MovieList = ({ movies }) => {
       </ul>
     </>
   );
+};
+
+MovieList.propTypes = {
+  movies: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default MovieList;

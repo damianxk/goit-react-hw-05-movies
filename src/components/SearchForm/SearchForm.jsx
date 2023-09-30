@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Notiflix from 'notiflix';
 import css from './SearchForm.module.css';
+import PropTypes from 'prop-types';
 
 const SearchForm = ({ onSubmit }) => {
   const [value, setValue] = useState('');
@@ -37,6 +38,10 @@ const SearchForm = ({ onSubmit }) => {
       </form>
     </header>
   );
+};
+
+SearchForm.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
 };
 
 export default SearchForm;
